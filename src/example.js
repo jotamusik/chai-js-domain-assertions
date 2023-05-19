@@ -1,5 +1,5 @@
 
-export default class Example {
+class Example {
   constructor() {
     this.exampleVariable = 'example';
   }
@@ -12,3 +12,5 @@ export default class Example {
     this.exampleVariable = exampleVariable;
   }
 }
+
+module.exports = Example
