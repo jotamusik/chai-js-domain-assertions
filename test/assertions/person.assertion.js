@@ -3,7 +3,7 @@ const Person = require('../../src/person')
 module.exports = function (chai, utils) {
   const { Assertion } = chai
 
-  Assertion.addProperty('child', function () {
+  Assertion.addMethod('child', function () {
     const actual = this._obj
     new Assertion(actual).to.be.instanceof(Person)
 
