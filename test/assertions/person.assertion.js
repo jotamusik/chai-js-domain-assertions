@@ -16,4 +16,18 @@ module.exports = function (chai) {
       `age is ${actual.age}`
     )
   })
+
+  Assertion.addMethod('adult', function () {
+    const actual = this._obj
+    new Assertion(actual).to.be.instanceof(Person)
+
+    const isChild = actual.age >= 18
+
+    this.assert(isChild,
+      `expected ${actual.toString()} to be an adult`,
+      `expected ${actual.toString()} to not be an adult`,
+      'age to be 18 or greater',
+      `age is ${actual.age}`
+    )
+  })
 }
