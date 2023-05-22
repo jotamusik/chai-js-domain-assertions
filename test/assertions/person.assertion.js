@@ -1,6 +1,6 @@
 const Person = require('../../src/person')
 
-module.exports = function (chai, utils) {
+module.exports = function (chai) {
   const { Assertion } = chai
 
   Assertion.addMethod('child', function () {
