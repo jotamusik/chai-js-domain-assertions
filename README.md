@@ -1,7 +1,7 @@
-# Javascript Katas
+# Javascript Domain Assertions using Chai
 
-[![Build Status](https://travis-ci.com/jotamusik/javascript-katas.svg?branch=master)](https://travis-ci.com/jotamusik/javascript-katas)
+## Description
 
-## Descripcion
+This repo contains the override of failing messages + custom assertion implementation using Chai
 
-Plantilla para practicar testing con javascript usando ES6+ configurado con Babel y Jest
+This is an equivalent repo of [jest custom assertions](https://github.com/jotamusik/jest-js-domain-assertions)
